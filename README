@@ -16,7 +16,7 @@ I also didn't check whether this Library is arm-only or also works in the Simula
 Finally a simple example on verifying a signature:
 
 NSLog("Original Data: %@", [RSALibrary verifySignature:@"762" publicExponent:@"17" modulus:@"2773"]);
-
+//I don't know what is the Max. Bitsize for a Key(Modulus, Exponent), I use 768 Bit Keys
 
 This will "decrypt" the signature and give it back as String which can be used to check the
 signed data.
