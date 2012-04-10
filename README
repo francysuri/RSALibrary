@@ -1,0 +1,30 @@
+This Library allows you to generate signatures, verify signatures, encrypt and decrypt using
+the RSA Algorithm.
+
+All (even "signature" and "message") arguments to the functions must be decimals.
+Hex and Binary are NOT supported.
+
+I originally made this Library for Signature-Checking, but you can also use this for decryption, 
+encryption, etc.
+Ignore the "publicExponent" and "privateExponent", imagine them being just "exponent"
+
+
+The library was compiled for iOS 5.0, I don't know whether it works on iOS 4.
+
+I also didn't check whether this Library is arm-only or also works in the Simulator, sorry for that.
+
+Finally a simple example on verifying a signature:
+
+NSLog("Original Data: %@", [RSALibrary verifySignature:@"762" publicExponent:@"17" modulus:@"2773"]);
+
+
+This will "decrypt" the signature and give it back as String which can be used to check the
+signed data.
+
+I hope I explained it good enough, if you have any questions feel free to contact me.
+
+----------
+
+Made by Rudolf Lichtner (@rud0lf77)
+
+Follow me (:
